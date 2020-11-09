@@ -39,8 +39,7 @@ export class SearchFormComponent implements OnInit {
   constructor(public githubUserRequest: ServicesService, public userRepos: ServicesService) { }
   
   ngOnInit() {
-      this.githubUserRequest.githubUser(this.searchMe);
-      
+      this.githubUserRequest.githubUser(this.searchMe); 
       this.users = this.githubUserRequest.users;
       this.userRepos.gitUserRepos(this.searchMe);
       console.log(this.userRepos);
