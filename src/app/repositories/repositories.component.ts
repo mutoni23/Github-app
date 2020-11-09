@@ -1,15 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 
+import {ServicesService} from '../services.service';
+import {Repository} from '../repository';
+
+
 @Component({
   selector: 'app-repositories',
   templateUrl: './repositories.component.html',
+    providers: [ServicesService],
   styleUrls: ['./repositories.component.css']
 })
 export class RepositoriesComponent implements OnInit {
 
-  constructor() { }
+    repository: Repository;
+    public searchRepo: string;
+   
 
-  ngOnInit(): void {
-  }
+    searchRepos(name) {
+        this.searchRepo = '';
 
+    }
+
+    constructor(public gitRepoRequest: ServicesService ) { }
+
+  ngOnInit() {
+     
+      this.gitRepoRequest.gitRepos(this.searchRepo);
+
+}
 }

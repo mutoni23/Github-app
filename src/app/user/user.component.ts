@@ -1,15 +1,13 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import {ServicesService} from '../services.service';
 import {Repository} from '../repository';
 import {User} from '../user';
 
 @Component({
-  selector: 'app-user-info',
-  templateUrl: './user-info.component.html',
+  selector: 'app-user',
+  templateUrl: './user.component.html',
   providers: [ServicesService],
-  styleUrls: ['./user-info.component.css']
+  styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
 
@@ -37,4 +35,3 @@ ngOnInit() {
     console.log(this.userRepos);
 }
 }
-
