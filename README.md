@@ -1,7 +1,7 @@
 # GithubApp
 
 # Description
-This app
+This app helps or allows the users to have an access on their github pages, and also to be able to search a repository on the github either by using username or a repository name.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
