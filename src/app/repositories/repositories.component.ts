@@ -13,6 +13,7 @@ import {Repository} from '../repository';
 export class RepositoriesComponent implements OnInit {
 
     repository: Repository;
+    
     public searchRepo: string;
    
 
