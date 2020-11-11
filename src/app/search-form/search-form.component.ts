@@ -41,7 +41,6 @@ export class SearchFormComponent implements OnInit {
   ngOnInit() {
       this.githubUserRequest.githubUser(this.searchMe); 
       this.users = this.githubUserRequest.users;
-      
       this.userRepos.gitUserRepos(this.searchMe);
       console.log(this.userRepos);
   }

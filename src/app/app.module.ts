@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgProgressModule } from '@ngx-progressbar/core';
-import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { FormsModule } from '@angular/forms';
 import { ServicesService} from './services.service';
 
@@ -34,8 +32,6 @@ import { StrikethroughDirective } from './strikethrough.directive';
     RoutingModule,
     RouterModule,
     FormsModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule,
     HttpClientModule,
   
 
